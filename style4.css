@@ -1,0 +1,79 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+:root{
+     --cor-fundo: #a51b0b;
+     --cor-hover: #3C1518;
+     --cor-primaria: rgb(231,241,236)
+}
+.dp-menu ul{
+    margin-top: 30px;
+    list-style-type: none;
+    padding: 15px;
+}
+.dp-menu ul{
+    background-color: var(--cor-fundo);
+}
+.dp-menu ul li{
+    display: inline;
+    position: relative;
+}
+.dp-menu ul li a{
+     color: var(--cor-primaria);
+     font-family:Century Gothic;
+     text-decoration: none;
+     display: inline;
+     padding: 20px;
+}
+.dp-menu ul li a:hover{
+     background-color: var(--cor-hover)
+}
+table {
+    width: 100%;
+}
+#Site{
+  width:100%;
+  height:50px;
+  float:left;
+  }
+.gp{
+float:left;
+display: block;
+margin-top: 1px;
+
+}
+.if{
+float: right;
+display: block;
+margin-top: 3px;
+}
+
+.sateli{
+text-align:justify;
+text-indent:4em;
+padding: 10px 150px;
+
+}
+.rc-l{
+text-align: justify;
+text-indent:4em;
+padding: 10px 150px;
+
+}
+.sat{
+width= 100%;
+margin-top: 5px;
+text-align: center;
+border: 2px solid --cor-hover;
+background-color:#a51b0b;
+color: var(--cor-primaria);
+font-family:Century Gothic;
+font-size: 20px;
+}
+.ti{
+font-family:Century Gothic;
+    font-size: 40px;
+}

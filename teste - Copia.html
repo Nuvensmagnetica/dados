@@ -1,0 +1,55 @@
+<?php include("conexao.php");
+$sql = "SELECT * FROM `planilhaeventos` WHERE 1;";?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav>
+    <a href="/">Página inicial</a> |
+    <a href="/eventos">Eventos</a> |
+    <a href="/satelite">Informações sobre o satelite</a> |
+    <a href="/info">Informações adicionais</a>
+    <p>
+
+    </p>
+</nav>
+
+<table border>
+    <tr>
+    <td>Tipo</td>
+    <td>Ano</td>
+    <td>Data inicio</td>
+    <td>Data final</td>
+    <td>Horário inicial</td>
+    <td>Horário final</td>
+    <td>Ângulos</td>
+    <td>Matching MVA</td>
+    <td>Matching Axis</td>
+    <td>Eixo</td>
+    <td>?²/?</td>
+    <td>P(?,?²,?³)</td>
+    <td>X (large angular rotation)</td>
+</tr>
+ <?php while($dados = $con.fetch_array()){ ?>
+<tr>
+<td><?php echo $dados["Tipo"] ?></td>
+<td><?php echo $dados["Ano"]; ?></td>
+<td><?php echo $dados["Data inicial"]; ?></td>
+<td><?php echo $dados["Data final"]; ?></td>
+<td><?php echo $dados["Horário inicial"]; ?></td>
+<td><?php echo $dados["Horário final"]; ?></td>
+<td><?php echo $dados["Ângulos (?, θ)"]; ?></td>
+<td><?php echo $dados["Matching (MVA Hodograms)"]; ?></td>
+<td><?php echo $dados["Matching (Axis Directions)"]; ?></td>
+<td><?php echo $dados["Mudanças"]; ?></td>
+<td><?php echo $dados["?²/?³"]; ?></td>
+<td><?php echo $dados["P(?,?²,?³)"]; ?></td>
+<td><?php echo $dados["?(large angular rotation)"]; ?></td>
+</tr>
+<?php } ?>
+</table>
+</body>
+</html>

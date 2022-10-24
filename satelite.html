@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="utf-8">
+    	<!-- Bootstrap CSS -->
+    	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style4.css') }}">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javaScript" src="pag.js"></script><title>Data and Analysis</title>
+</head>
+	<body>
+
+	<center>
+<div class="gp">
+	<img src="static/gpmcc.JPG">
+</div>
+	<div class="if">
+		<img src="static/IFSJC.png" alt="Image" height="70" width="70">
+	</div>
+<div class="ti">
+		Characterization of magnetic clouds
+	</div>
+</center>
+<center>
+		<nav class ="dp-menu">
+			<ul>
+				<li><a href="/">Homepage</a></li>
+				<li><a href="/satelite">Data and Analysis</a></li>
+				<li><a href="/eventos" class="bt1">Events</a></li>
+				<li><a href="/info">Information/Contacts</a></li>
+		</ul>
+			</nav>
+<div class="sat">
+<center>
+	Satellite
+</center>
+</div>
+	<div class="sateli">
+	<p>
+		The analyzed data are vector measurements of the magnetic field
+interplanetary (IMF). This data is obtained by the Advanced probe
+Composition Explorer, for use in the software. She was released in
+December 1997, with the function of monitoring particle flows from the
+Sun or other stellar and galactic sources, in this way ACE allows us to study
+and analyze the solar winds and measure the direction and magnitude of the IMF.
+The ACE orbits at the point of
+Lagrange L1, that is, at the point of Earth-Sun gravitational equilibrium, at a distance of
+about 1.5×106 km from Earth. Due to this, ACE has a privileged view
+of the object of study of this research, that is, the solar wind.
+</p>
+		</div>
+	<p>
+		<center>
+<img src="static/Capturar.JPG" heigth="10">
+		</center>
+	Fonte da imagem: http://www.srl.caltech.edu/ACE/ace_mission.html
+	</p>
+	<div class="sateli">
+	<p>
+		Due to this, ACE has a privileged view of the object of study of this research, that is, the solar wind. Regarding the instruments, the ACE satellite has six high-resolution sensors and three monitoring instruments positioned as illustrated in the Figure panel. Of these, the data from the MAG instrument that measures the direction and magnitude of the IMF are used in this research. The data obtained by ACE is made available online by the ACE Science Center (ASC). This center is intended to facilitate collaborative work with mission data. Since the works are not restricted to researchers funded by the ACE project, it is also the responsibility of the ASC to archive and make the data available to any public with internet access. Due to the characteristics of this research, the data were downloaded in annualized files. The sequence of steps for this download starts with accessing the data page.
+In this research, only data from the ASC level 2 MAG and SWEPAM instrument are used and in the choice of the instrument of interest, in the case “MAG”. The “txt” type file is obtained by choosing the Text file download option and clicking on the Retrieve data button. As a result, each downloaded file contains data from a complete year and the computational implementations are responsible for locating each event of interest in the file, depending on the specific context under study. The Figure below shows fragments of the file corresponding to the year 2018. The image shows the presence of a standard header with detailed information about the file (from the term “BEGIN METADATA”) and the data matrix organized according to parameters defined in download page (from the term “BEGIN DATA”). In the example of the Figure there are nine columns containing: year, day, hour, minute, second and the measurements of the MAG equipment (magnitude, x, y and z coordinates of the magnetic field in the GSE system). It is also worth noting that the information “day” used refers to the DOY. For the calculation results of the minimum variance method (MVA) measurements of the IMF components, 𝐵𝑥, 𝐵𝑦, 𝐵𝑧 (in GSE coordinates), with a resolution of 4 minutes, were used. On the other hand, for the characterization results, in addition to the measurements of the IMF components, proton density parameters (𝑁𝑝 in 𝑐𝑚³), proton temperature in the radial component (𝑇 𝑝 in degrees Kelvin), the alphas/protons ratio, proton velocity; in this case with a resolution of 64 seconds.
+<p>
+		<h4>
+		Site ACE:
+		</h4>
+		<nav>
+		<a href="http://www.srl.caltech.edu/ACE/ace_mission.html"> ACE | </a> <a href="http://www.srl.caltech.edu/ACE/ASC/"> ACE - ASC  </a>
+	</nav>
+	</p>
+		</p>
+		<center> <img src="static/dados.JPG"><img src="static/txt.JPG"> </center>
+</div>
+</div>
+	</div>
+	<div class="sat">
+		<center>
+				Richardson and Cane Cataloging
+				</center>
+		</div>
+				<div class="rc-l">
+			<p>
+				The cataloging is carried out from the data from the ACE satellite, analyzing the disturbances occurring in the magnetic field and the Interplanetary Coronal Mass Ejections (ICMEs) in the period from 1996 to the most recent data. It is structured by the need for four simultaneous features to consider events as magnetic clouds (MCs). These properties are: low thermal velocity of the ions, higher magnetic field strength, plasma beta values ​​lower than the environment and smooth rotation of the magnetic field, as well as the authors' criteria. The analysis allows the classification of 3 groups: when an MC2 magnetic cloud is identified; when the MC0 characteristics are not present; when the disturbance occurs, but it is not possible to determine if it is an MC, then it assumes the possibility of an MC1 cloud. The studied information is presented in a table, containing 18 columns of disturbance arrival time related to ICME; ICME start and end time; Composition/state-of-charge signature start and end offsets against ICME times; Displacements of beginning and end of magnetic cloud with respect to time; Bidirectional suprathermal electron flows in ICME; Bidirectional energetic, ion flows in ICME based on IMP data; Quality of ICME timeout estimates; Increase in solar wind speed in the disturbance; Average solar wind speed in the ICME range; Maximum solar wind speed in the interval from the disturbance to the ICME trailing edge; Average strength of the magnetic field in the range; Analysis of magnetic clouds (MC0, MC1 or MC2); Minimum value From the Dst geomagnetic index; Traffic speed of 1 AU of disturbance; Time of the associated solar event, usually given by the CME time.
+			</p>
+					<h4>
+		Site:
+		</h4>
+		<nav>
+		<a href="https://izw1.caltech.edu/ACE/ASC/DATA/level3/icmetable2.htm"> Richardson and Cane Cataloging  </a>
+	</nav>
+	</div>
+
+</div>
+	<div class="sat">
+		<center>
+			 Software AMCDA
+		</center>
+	</div>
+	<div class="rc-l">
+	<p>
+		The software used was developed by Oliveira 2021 and features a graphical interface with
+four viewing screens. The initial “Data Set” screen is eight graphs taken directly from satellite data without pre-processing. In the board
+“MVA Hodograms” performs the processing of the minimum variance method (MVA) on the
+components of the magnetic field, the force-free model and their rotations, considering the sets
+of MVA correction.
+The “Axes Directions” button shows the magnetic field coordinates
+of the event compared to the two model rotations. The “MVA Results” presents
+a table of quantitative and qualitative processing results. On this screen, 𝑥𝑖 (𝐺𝑆𝐸) are the
+eigenvectors and (𝜆1, 𝜆2, 𝜆3) their eigenvalues, (𝜑, 𝜃) are the angles estimated by the MVA for the
+MC axis. In addition, the ratio 𝜆2/𝜆3 based on Lepping and Behannon (1980), the metric
+𝑃 (𝜆1, 𝜆2, 𝜆3) based on Oliveira et al. (2020) and 𝜒 the angle of rotation of the magnetic field that
+allow quantitative assessment of the quality of the event studied. Both eigenvectors and angles of the
+MC axis are modified according to the decision recorded on the other screens. While, (𝜑1, 𝜃1)
+and (𝜑2, 𝜃2) are the possible angles of the MC axis, 𝑇ype and Handednaess are the type and helicity,
+automatically obtained by the process.
+		<h4>
+		Site:
+	</h4>
+		<nav>
+		<a href="https://zenodo.org/record/5358842#.Yn5MPOjMJPa"> Automatic Magnetic Cloud Data Analysis - AMCDA  </a>
+	</nav>
+		<center>
+		<p>
+		<h3>
+		Data Set
+	</h3>
+	</p><img src="static/dataset.JPG"  width="50%">
+		<p>
+			<h3>
+		MVA Hodograms
+	</h3>
+		</p>
+		<img src="static/mva.JPG" width="50%">
+		<p>
+			<h3>
+		Axis Direction
+	</h3>
+			 <img src="static/axis.JPG" width="50%">
+		<p><h3>
+		MVA Results
+	</h3>
+			</p>
+		<img src="static/results.JPG" width="50%">
+</center>
+	</div>
+</body>
+</html>
